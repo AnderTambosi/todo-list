@@ -8,6 +8,5 @@ django-autofixture = "*"
 
 [packages]
 Django = "*"
-psycopg2 = "*"
 django-watson = "*"
 django-widget-tweaks = "*"
