@@ -4,6 +4,16 @@
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
+![todo](todo.gif)
+
+
+# To install and configure docker access:
+
+- [Docker: Tudo o que você precisa saber para começar a usar](https://medium.com/@hudsonbrendon/docker-tudo-o-que-voc%C3%AA-precisa-saber-para-come%C3%A7ar-a-usar-b82b2d4284f0)
+
+- [Conteinerizando suas aplicações django com docker e docker-compose](https://medium.com/grupy-rn/conteinerizando-suas-aplica%C3%A7%C3%B5es-django-com-docker-e-docker-compose-3e86a8df6984)
+
+
 # Install
 
 ```sh
@@ -29,7 +39,9 @@ $ docker-compose up -d
 ```
 For running in background.
 
-And access:
+# Access
+
+To access the platform:
 
 [localhost:8000](http://localhost:8000)
 
