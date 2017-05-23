@@ -7,7 +7,7 @@
 # Install
 
 ```sh
-$ https://github.com/hudsonbrendon/todo-list.git
+$ git clone https://github.com/hudsonbrendon/todo-list.git
 $ cd todo-list
 $ docker-compose run web pipenv python manage.py makemigrations
 $ docker-compose run web pipenv python manage.py migrate
@@ -28,13 +28,24 @@ And access:
 
 [localhost:8000](http://localhost:8000)
 
+Using autofixture for populate tasks:
+
+```sh
+$ docker-compose run web pipenv run python manage.py loadtestdata tasks.Task:30
+```
+
 # Tests
+
+For running tests:
+
 ```sh
 $ ./runtests
 ```
 
 # Dependencies
 
+- [Docker](https://docker.com)
+- [docker-compose](https://docs.docker.com/compose/)
 - [Python 3.5](https://www.python.org/downloads/release/python-350/)
 - [Pipenv](https://github.com/kennethreitz/pipenv)
 - [NodeJS](https://nodejs.org/en/)
