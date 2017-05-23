@@ -1,9 +1,7 @@
 # Todo-List
 
-[![Build Status](https://travis-ci.org/hudsonbrendon/challenges4dojo.svg?branch=master)](https://travis-ci.org/hudsonbrendon/challenges4dojo)
-[![Github Issues](http://img.shields.io/github/issues/hudsonbrendon/challenges4dojo.svg?style=flat)](https://github.com/hudsonbrendon/challenges4dojo/issues?sort=updated&state=open)
+[![Build Status](https://travis-ci.org/hudsonbrendon/todo-list.svg?branch=master)](https://travis-ci.org/hudsonbrendon/todo-list)
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
-
 
 
 # Install
