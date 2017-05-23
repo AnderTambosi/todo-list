@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}
+    Create | {{ block.super }}
+{% endblock %}
+
+{% block container %}
+    <h1>Create task</h1>
+    {% include "includes/_form.html" %}
+{% endblock container %}

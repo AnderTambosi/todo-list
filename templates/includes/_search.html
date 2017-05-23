@@ -1,0 +1,10 @@
+{% if user.is_authenticated %}
+    <form class="navbar-form navbar-left" role="search" action="{% url 'tasks:list' %}">
+      <div class="form-group">
+        <input name="q" type="text" class="form-control" placeholder="Search" />
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
+    </form>
+{% endif %}

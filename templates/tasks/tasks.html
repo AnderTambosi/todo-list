@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+List | {{ block.super }}
+
+{% block container %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="box box-aqua">
+      <div class="box-header ui-sortable-handle" style="cursor: move;">
+        <i class="ion ion-clipboard"></i>
+        <h3 class="box-title">Todo List</h3>
+        <div class="box-tools pull-right">
+          {% include "includes/pagination.html" %}
+        </div>
+      </div>
+
+      <div class="box-body">
+        <ul class="todo-list ui-sortable">
+            {% for task in tasks %}
+                <li class="task">
+                  <span class="text"><a href="{{ task.get_absolute_url }}" title="Click to view">{{ task.title|title }}</a></span>
+                  <small class="label label-default" title="Creation time"><i class="fa fa-clock-o"></i> {{ task.created_at|timesince }}</small>
+                  <div class="tools">
+                    <a href="{% url 'tasks:done' task.id %}" class="btn btn-success btn-sm done" title="Mark as finalized"><i class="fa fa-check-square-o"></i></a>
+                    <a href="{% url 'tasks:update' task.id %}" class="btn btn-primary btn-sm" title="Update task"><i class="fa fa-edit"></i></a>
+                    <a href="{% url 'tasks:delete' task.id %}" class="btn btn-danger btn-sm" title="Delete task"><i class="fa fa-trash-o"></i></a>
+                  </div>
+                </li>
+            {% endfor %}
+        </ul>
+      </div>
+      <div class="box-footer clearfix no-border">
+      <a href="{% url 'tasks:create' %}" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Create task</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock container %}

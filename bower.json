@@ -1,0 +1,22 @@
+{
+  "name": "todo-list",
+  "homepage": "https://github.com/hudsonbrendon/todo-list",
+  "authors": [
+    "Hudson Brendon <contato.hudsonbrendon@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery-ui": "^1.12.1"
+  }
+}

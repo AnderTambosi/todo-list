@@ -1,0 +1,74 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "ecd2bafeadcc275a7e2160ba2bd39025f229618c2b130be7e6d53fbfe64c8486"
+        },
+        "requires": {},
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "Django": {
+            "hash": "sha256:bb3109a31cfa016e5f234223665f80fc06107f2169afb9f6dc8828295db73547",
+            "version": "==1.11.1"
+        },
+        "django-watson": {
+            "hash": "sha256:ece1989a92a807db08a0997b4392602341a3b0fd3174658f5add302bf74651ec",
+            "version": "==1.3.1"
+        },
+        "django-widget-tweaks": {
+            "hash": "sha256:0e8e3b7ebd1aafb2250d0f7614cfbad27017b3c727858ee3aee23748dd1f147d",
+            "version": "==1.4.1"
+        },
+        "psycopg2": {
+            "hash": "sha256:9c9fe11f87c44e83620b2273f40338e3c25fdbfd34986dddc77e840e0acd25bc",
+            "version": "==2.7.1"
+        },
+        "pytz": {
+            "hash": "sha256:d1d6729c85acea5423671382868627129432fba9a89ecbb248d8d1c7a9f01c67",
+            "version": "==2017.2"
+        }
+    },
+    "develop": {
+        "Django": {
+            "hash": "sha256:bb3109a31cfa016e5f234223665f80fc06107f2169afb9f6dc8828295db73547",
+            "version": "==1.11.1"
+        },
+        "appdirs": {
+            "hash": "sha256:d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e",
+            "version": "==1.4.3"
+        },
+        "django-autofixture": {
+            "hash": "sha256:32588b80814cdff3a8aab7cf3859fc9330d38abe37a9cc16e53d24dd1b1fcd86",
+            "version": "==0.12.1"
+        },
+        "model_mommy": {
+            "hash": "sha256:d60a5967967d63b0a79a3ebbb5753379b037d411c44e5ae284cbc485f2c9f63a",
+            "version": "==1.3.2"
+        },
+        "packaging": {
+            "hash": "sha256:99276dc6e3a7851f32027a68f1095cd3f77c148091b092ea867a351811cfe388",
+            "version": "==16.8"
+        },
+        "pyparsing": {
+            "hash": "sha256:fee43f17a9c4087e7ed1605bd6df994c6173c1e977d7ade7b651292fab2bd010",
+            "version": "==2.2.0"
+        },
+        "pytz": {
+            "hash": "sha256:d1d6729c85acea5423671382868627129432fba9a89ecbb248d8d1c7a9f01c67",
+            "version": "==2017.2"
+        },
+        "setuptools": {
+            "hash": "sha256:19d753940f8cdbee7548da318f8b56159aead279ef811a6efc8b8a33d89c86a4",
+            "version": "==35.0.2"
+        },
+        "six": {
+            "hash": "sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1",
+            "version": "==1.10.0"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Account | {{ block.super }}{% endblock %}
+
+{% block container %}
+<ol class="breadcrumb">
+  <li><a href="{% url 'accounts:index' %}">Home</a></li>
+  <li class="active">Account</li>
+</ol>
+<div class="row">
+    <div class="col-md-4">
+        <div class="list-group">
+          <a href="{% url 'accounts:index' %}" class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i> Account</a>
+          <a href="{% url 'accounts:tasks' %}" class="list-group-item"><i class="fa fa-list" aria-hidden="true"></i> Tasks</a>
+          <a href="{% url 'accounts:tasks_done' %}" class="list-group-item"><i class="fa fa-list" aria-hidden="true"></i> Tasks done</a>
+          <a href="{% url 'accounts:update_user' %}" class="list-group-item"><i class="fa fa-pencil" aria-hidden="true"></i> Update</a>
+          <a href="{% url 'accounts:update_password' %}" class="list-group-item"><i class="fa fa-pencil" aria-hidden="true"></i> Update password</a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        {% block accounts_container %}
+            <h2>Welcome {{ user }}</h2>
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}

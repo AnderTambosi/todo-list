@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[dev-packages]
+model_mommy = "*"
+django-autofixture = "*"
+
+[packages]
+Django = "*"
+psycopg2 = "*"
+django-watson = "*"
+django-widget-tweaks = "*"
