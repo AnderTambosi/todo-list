@@ -28,6 +28,8 @@ And
 $ docker-compose run web bower install
 ```
 
+# Running
+
 For running:
 
 ```sh
