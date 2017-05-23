@@ -9,8 +9,8 @@
 ```sh
 $ git clone https://github.com/hudsonbrendon/todo-list.git
 $ cd todo-list
-$ docker-compose run web pipenv python manage.py makemigrations
-$ docker-compose run web pipenv python manage.py migrate
+$ docker-compose run web pipenv run python manage.py makemigrations
+$ docker-compose run web pipenv run python manage.py migrate
 ```
 And
 
