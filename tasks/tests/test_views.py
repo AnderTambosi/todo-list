@@ -27,14 +27,6 @@ class TaskListViewTestCase(TestCase):
         self.assertEquals(response.status_code, 302)
         self.client.login(username=self.user.username, password='test@123')
 
-    # def test_context(self):
-    #     response = self.client.get(self.url)
-    #     self.assertEquals(response.status_code, 302)
-    #     self.client.login(username=self.user.username, password='test@123')
-    #     self.assertTrue('tasks' in response.context)
-    #     tasks = response.context['tasks']
-    #     self.assertEquals(tasks.count(), 10)
-
 
 class TaskCreateViewTestCase(TestCase):
 
@@ -90,13 +82,6 @@ class TaskDetailViewTestCase(TestCase):
         response = self.client.get(self.url)
         self.assertEquals(response.status_code, 302)
         self.client.login(username=self.user.username, password='test@123')
-
-    # def test_context(self):
-    #     self.assertTrue('task' in self.response.context)
-    #     self.assertEquals(self.response.context['task'].title,
-    #                       self.task.title)
-    #     self.assertEquals(self.response.context['task'].description,
-    #                       self.task.description)
 
 
 class TaskUpdateViewTestCase(TestCase):

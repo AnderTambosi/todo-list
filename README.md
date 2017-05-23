@@ -23,16 +23,15 @@ For running:
 ```sh
 $ docker-compose up
 ```
+or
+```sh
+$ docker-compose up -d
+```
+For running in background.
 
 And access:
 
 [localhost:8000](http://localhost:8000)
-
-Using autofixture for populate tasks:
-
-```sh
-$ docker-compose run web pipenv run python manage.py loadtestdata tasks.Task:30
-```
 
 # Tests
 

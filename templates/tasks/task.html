@@ -8,4 +8,8 @@
 
     {% include "includes/_task.html" %}
 
+    <a href="{% url 'tasks:done' task.id %}" class="btn btn-success btn-sm done" title="Mark as finalized"><i class="fa fa-check-square-o"></i> Done</a>
+    <a href="{% url 'tasks:update' task.id %}" class="btn btn-primary btn-sm" title="Update task"><i class="fa fa-edit"></i> Update</a>
+    <a href="{% url 'tasks:delete' task.id %}" class="btn btn-danger btn-sm" title="Delete task"><i class="fa fa-trash-o"></i> Delete</a>
+
 {% endblock %}
